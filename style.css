@@ -1,42 +1,74 @@
-#body{
-    margin: 0;
-}
-.main-login{
-    width: 100vw;
-    height: 100vh;
-    background-color: #201b2c;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+* {
+  margin: 0;
 }
 
-.left-login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #201b2c;
 }
 
-.left-login h1{
-    color: #77ffc0;
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.right-login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-login {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
 
-.card-login{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 25px;
-    background: #2f2841;
+/* .main-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+} */
+
+.left-login {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login h1 {
+  color: #77ffc0;
+}
+
+.right-login {
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 25px;
+  background: #2f2841;
+  border-radius: 20px;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textfield label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.titulo-form-login {
+  margin-bottom: 30px;
+  color: #77ffc0;
 }
